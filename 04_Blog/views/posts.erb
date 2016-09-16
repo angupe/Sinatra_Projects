@@ -1,0 +1,10 @@
+<h1>This is a list of your posts...</h1>
+<ul>
+<% @stored.each_with_index do |post, index| %>
+    <li><%= post.title %></li>
+    <li><%= post.date %></li>
+    <li><%= post.text %></li>
+    <li><%= post.sponsored %></li>
+    <br>
+
+<% end %>

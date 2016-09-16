@@ -1,0 +1,14 @@
+<h1>about</h1>
+
+<h3>Usuarios</h3>
+
+<ul>
+<% if @mostrar %>
+
+    <% @usuarios.each do |user| %>
+    <li> <%= user %> </li>
+    <% end %>
+<% else %>
+    <h3>no hay usuarios</h3>
+<% end %>
+</ul>
